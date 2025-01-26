@@ -7,9 +7,16 @@
     <title>Tea House</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/ebcedd9acb.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        .manrope-font {
+            font-family: "Manrope", serif;
+          }
+          
+    </style>
 </head>
 
-<body>
+<body class="manrope-font">
     <header>
         <!-- banner section -->
          <div class="lg:flex w-10/12 mx-auto justify-between items-center">
@@ -41,8 +48,40 @@
               </div>
          </div>
     </header>
-    <main>
-
+    <main class="max-w-6xl mx-auto">
+        <!-- products section start -->
+         <section class=" mt-32">
+            <h1 class="text-center text-5xl font-extrabold">Our Featured Products</h1>
+            <br>
+            <p class=" text-center font-medium text-[#777777] mx-5 md:mx-28">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            <!-- card container -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  mt-10">
+                <!-- card 1-->
+                 <div class="flex flex-col justify-center items-center mx-6  rounded-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] space-y-4">
+                    <img class=" max-w-32 w-full mx-auto py-8" src="images/tea-1.png" alt="">
+                    <h1 class="text-2xl font-extrabold ">Milk Tea</h1>
+                    <p class=" text-[#777777] font-medium px-8 pb-8 lg:text-center">Creamer could be replaced by fresh milk</p>
+                 </div>
+                <!-- card 2-->
+                <div class="flex flex-col justify-center items-center mx-6  rounded-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] space-y-4">
+                    <img class=" max-w-32 w-full mx-auto py-8" src="images/tea-2.png" alt="">
+                    <h1 class="text-2xl font-extrabold ">Black Tea</h1>
+                    <p class=" text-[#777777] font-medium px-8 pb-8 lg:text-center">Creamer could be replaced by fresh milk</p>
+                 </div>
+                <!-- card 3-->
+                <div class="flex flex-col justify-center items-center mx-6  rounded-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] space-y-4">
+                    <img class=" max-w-32 w-full mx-auto py-8" src="images/tea-3.png" alt="">
+                    <h1 class="text-2xl font-extrabold ">Lemon Tea</h1>
+                    <p class=" text-[#777777] font-medium px-8 pb-8 lg:text-center">Creamer could be replaced by fresh milk</p>
+                 </div>
+                 <!-- card 4 -->
+                 <div class="flex flex-col justify-center items-center mx-6  rounded-xl bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] space-y-4">
+                    <img class=" max-w-32 w-full mx-auto py-8" src="images/tea-4.png" alt="">
+                    <h1 class="text-2xl font-extrabold ">Green Tea</h1>
+                    <p class=" text-[#777777] font-medium px-8 pb-8 lg:text-center">Creamer could be replaced by fresh milk</p>
+                 </div>
+             </div>
+         </section>
     </main>
     <footer>
 
