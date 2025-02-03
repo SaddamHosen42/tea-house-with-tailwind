@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
+    <!-- tailwindcss CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome CDN -->
     <script src="https://kit.fontawesome.com/ebcedd9acb.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -17,9 +19,9 @@
 </head>
 
 <body class="manrope-font">
-    <header>
+    <header class="bg-slate-200">
         <!-- banner section -->
-         <div class="lg:flex w-10/12 mx-auto justify-between items-center">
+         <div class="container w-4/5 mx-auto lg:flex justify-between items-center">
             <!-- banner text -->
              <div>
                  <h1 class="text-7xl font-bold">It's good
@@ -48,9 +50,9 @@
               </div>
          </div>
     </header>
-    <main class="max-w-6xl mx-auto">
+    <main class="container mx-auto w-4/5">
         <!-- products section start -->
-         <section class=" mt-32">
+         <section class="mt-32">
             <h1 class="text-center text-5xl font-extrabold">Our Featured Products</h1>
             <br>
             <p class=" text-center font-medium text-[#777777] mx-5 md:mx-28">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -82,10 +84,10 @@
                  </div>
              </div>
          </section>
-        <!-- Great tea -->
-         <section class="grid grid-cols-1 lg:grid-cols-2 mt-32 lg:gap-12">
+        <!-- Great tea section start-->
+         <section class="grid grid-cols-1 lg:grid-cols-2 mt-32 gap-4 lg:gap-12">
             <!-- content img -->
-            <div class="grid grid-cols-2 grid-rows-3 gap-3">
+            <div class="grid grid-cols-2 grid-rows-3 gap-5">
                 <!-- box 1 -->
                 <div class=" bg-gradient-to-r from-[#FF0000] to-[#FF8938] rounded-xl opacity-10 ">
                 </div>
@@ -94,15 +96,15 @@
                     <img class=" mx-auto py-10" src="images/fresh-1.png" alt="">
                 </div>
                 <!-- img 2 -->
-                <div class=" bg-[#E6A6231A] rounded-xl row-span-2">
-                    <img class="mx-auto py-10" src="images/fresh-1.png" alt="">
+                <div class="bg-[#90d0501a] rounded-xl row-span-2">
+                    <img class="mx-auto py-10" src="images/fresh-2.png" alt="">
                 </div>
                 <!-- box 2 -->
-                <div class="bg-gradient-to-r from-[#FF0000] to-[#FF8938] rounded-xl opacity-10">
+                <div class="bg-gradient-to-r from-[#f64949] to-[#a17676] rounded-xl opacity-10">
                 </div>
             </div>
             <!--content text -->
-            <div class="space-y-4">
+            <div class="space-y-4 text-center lg:text-left">
                 <h1 class=" font-extrabold text-5xl">Great Tea, Freshly Presented</h1>
                 <p class=" font-medium text-[#777777]">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
                 <h3 class="font-extrabold text-xl">Unique Taste</h3>
@@ -111,6 +113,17 @@
                 <p class=" font-medium text-[#777777]">Premium Quality that makes tea more elegant and more durable when you use it.</p>
             </div>
          </section>
+        <!--super clients section start -->
+        <section class=" bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 mt-32 p-10">
+            <div class="text-white space-y-4 relative">
+                <h1 class="text-5xl font-bold">Meet Our Super Clients</h1>
+                <p class="font-medium text-[#F4F4F4]">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+                <button class="bg-white px-5 py-5 text-red-500 rounded-xl font-bold text-lg">Show All<i class="fa-solid fa-arrow-right -rotate-45 text-lg"></i></button>
+            </div>
+            <div></div>
+        </section>
     </main>
     <footer>
 
